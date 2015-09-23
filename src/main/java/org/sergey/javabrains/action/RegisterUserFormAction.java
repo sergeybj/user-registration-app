@@ -16,6 +16,7 @@ import org.sergey.javabrains.utils.Utilities;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import com.google.gson.Gson;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -61,7 +62,7 @@ public class RegisterUserFormAction extends ActionSupport {
 
 		return "SUCCESS";
 	}
-
+	
 	public Long getSavedId() {
 		return savedId;
 	}

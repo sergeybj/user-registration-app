@@ -9,14 +9,12 @@ import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.ResultPath;
-import org.apache.struts2.convention.annotation.Results;
 import org.sergey.javabrains.domain.User;
 import org.sergey.javabrains.service.UserService;
 import org.sergey.javabrains.utils.Utilities;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.google.gson.Gson;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -25,6 +23,11 @@ import com.opensymphony.xwork2.ActionSupport;
 @ParentPackage(value="tiles-default")
 
 public class RegisterUserFormAction extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Autowired
 	UserService userService;

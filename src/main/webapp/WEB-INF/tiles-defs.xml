@@ -10,6 +10,11 @@
 		<put-attribute name="header" value="/pages/layout/header.jsp" />
 		<put-attribute name="footer" value="/pages/layout/footer.jsp" />
 	</definition>
+	
+	<definition name="userLogin" extends="baseLayout">
+		<put-attribute name="body" value="/pages/loginBody.jsp" />
+	</definition>
+	
 
 	<definition name="userReg" extends="baseLayout">
 		<put-attribute name="body" value="/pages/registerUserBody.jsp" />

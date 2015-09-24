@@ -6,5 +6,5 @@
 
 		<div ng-repeat="item in contacts">{{item}}</div>
 
-
+		<div ng-model="json">{{json}}</div>
 </body>

@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="sb" uri="/struts-bootstrap-tags" %>
 <html>
 <head><title>First JSP</title>
 
@@ -10,42 +12,42 @@
 </head>
 <body>
 
-<form action="registerUserAction" method="post" class="form-horizontal" style="width:500px">
+<s:form action="registerUserAction" method="post" class="form-horizontal" style="width:500px" validate="true">
   <fieldset>
     <legend>User Registration Form</legend>
     
     <div class="form-group">
       <label for="firstName" class="col-lg-2 control-label">First Name: </label>
       <div class="col-lg-10">
-        <input class="form-control" id="firstName" name="firstName" placeholder="First Name" type="text">
+        <s:textfield class="form-control" id="firstName" name="firstName" placeholder="First Name"/>
       </div>
     </div>
     
     <div class="form-group">
       <label for="lastName" class="col-lg-2 control-label">Last Name: </label>
       <div class="col-lg-10">
-        <input class="form-control" id="lastName" name="lastName" placeholder="Last Name" type="text">
+        <s:textfield class="form-control" id="lastName" name="lastName" placeholder="Last Name"/>
       </div>
     </div>
     
     <div class="form-group">
       <label for="email" class="col-lg-2 control-label">Email: </label>
       <div class="col-lg-10">
-        <input class="form-control" id="email" name="email" placeholder="Email" type="text">
+        <s:textfield class="form-control" id="email" name="email" placeholder="Email"/>
       </div>
     </div>
     
     <div class="form-group">
       <label for="password" class="col-lg-2 control-label">Password: </label>
       <div class="col-lg-10">
-        <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+        <s:password class="form-control" id="password" name="password" placeholder="Password"/>
       </div>
     </div>
     
      <div class="form-group">
       <label for="birthDate" class="col-lg-2 control-label">Birth Date: </label>
       <div class="col-lg-10">
-        <input class="form-control" id="birthDate" name="birthDate" placeholder="Birth Date" type="text">
+        <s:textfield class="form-control" id="birthDate" name="birthDate" placeholder="Birth Date"/>
       </div>
     </div>
     
@@ -58,7 +60,7 @@
     
   
   </fieldset>
-</form>
+</s:form>
 
 </body>
 </html>
